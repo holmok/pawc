@@ -1,5 +1,10 @@
 # pawc (Promise All with Concurrency)
 
+[![NPM Version](https://img.shields.io/npm/v/pawc.svg?style=flat-square)](https://www.npmjs.com/package/pawc)
+[![Build Status](https://travis-ci.com/holmok/pawc.svg?branch=master)](https://travis-ci.org/holmok/pawc)
+[![Dependency Status](https://david-dm.org/holmok/pawc/status.svg)](https://david-dm.org/holmok/pawc)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 This is basically a `Promise.all()` but with limiting the concurrency.  It works where you pass it the 
 concurrency, and a promise map and will either resolve with a map of resolve and reject maps that will
 match your promise map or optionally reject on the first rejected promise.  A promise map is an object
