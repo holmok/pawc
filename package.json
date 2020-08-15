@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/holmok/yapq.git"
   },
+  "engines":{
+    "node": ">=10"
+  },
   "keywords": [
     "proimise",
     "queue",
