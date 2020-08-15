@@ -1,0 +1,7 @@
+node_modules
+.nyc_output
+tests.js
+examples.js
+package-lock.json
+.travis.yml
+.DS_Store

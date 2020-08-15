@@ -1,0 +1,33 @@
+{
+  "name": "pawc",
+  "version": "1.0.0",
+  "description": "Promise All with Concurrency",
+  "main": "pawc.js",
+  "scripts": {
+    "test": "tap tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holmok/yapq.git"
+  },
+  "keywords": [
+    "proimise",
+    "queue",
+    "node"
+  ],
+  "author": "Christopher Holmok <christopher@holmok.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/holmok/yapq/issues"
+  },
+  "homepage": "https://github.com/holmok/yapq#readme",
+  "devDependencies": {
+    "sinon": "^9.0.3",
+    "standard": "^14.3.4",
+    "tap": "^14.10.8",
+    "tap-spec": "^5.0.0"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
