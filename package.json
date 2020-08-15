@@ -14,7 +14,7 @@
     "node": ">=10"
   },
   "keywords": [
-    "proimise",
+    "promise",
     "queue",
     "node"
   ],
