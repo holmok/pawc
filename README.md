@@ -26,8 +26,8 @@ async function () {
     a: () => Promise.resolve('hello from a'),
     b: () => Promise.resolve('hello from b'),
   }
-  const result = await pawc.all(1, promisesMap)
-  // result is { resolves: { a:'hello from a', b:'hello from b' }}
+  const result = await pawc.all(1, promisesMap) // result is { resolves: { a:'hello from a', b:'hello from b' }}
+}
 ```
 
 Another simple example with a rejection, it's also from a test in `tests.js`.
@@ -39,8 +39,8 @@ async function () {
     a: () => Promise.resolve('hello from a'),
     b: () => Promise.reject(new Error('opps')),
   }
-  const result = await pawc.all(1, promisesMap)
-  // result is { resolves: { a:'hello from a' }, rejects: { b: [oops Error] } }
+  const result = await pawc.all(1, promisesMap)  // result is { resolves: { a:'hello from a' }, rejects: { b: [oops Error] } }
+}
 ```
 ### Reject on First
 
@@ -50,7 +50,8 @@ returns an error, you will lose any resolves that finished before the first reje
 Here is another example from the `tests.js`:
 
 ```
- const promisesMap = {
+async function () {
+  const promisesMap = {
     a: () => Promise.reject(new Error('oops')),
     b: () => Promise.resolve('will not be called') }
   }
@@ -60,6 +61,7 @@ Here is another example from the `tests.js`:
   } catch (error) {
     console.error(error.message) // oops
   }
+}
 ```
 
 ### Async Await Example
