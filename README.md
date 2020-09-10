@@ -99,3 +99,9 @@ pawc all promises done +0ms
   rejects: {}
 }
 ```
+
+# Version History
+
++ __1.0.0__ - initial release 
++ __1.0.1__ - example and doc fixes 
++ __1.1.0__ - fix using multiple instances of pawc 

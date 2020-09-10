@@ -5,3 +5,4 @@ examples.js
 package-lock.json
 .travis.yml
 .DS_Store
+coverage

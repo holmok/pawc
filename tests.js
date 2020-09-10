@@ -18,7 +18,7 @@ tap.test('some fail', async (t) => {
     a: () => Promise.resolve(1),
     b: () => Promise.reject(new Error('oops'))
   }
-  const result = await pawc.all(1, promisesMap)
+  const result = await pawc.all(1, promisesMap, false)
   t.deepEquals(result.resolves, { a: 1 })
   t.equal(result.rejects.b.message, 'oops')
 })
